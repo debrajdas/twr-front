@@ -47,19 +47,19 @@ export default function Registration() {
       justifyContent: 'center',
       alignItems: 'center',
       
-      height: '130vh',
+      height: '100vh',
         width:'500vw'
       
     }}
     >
     <Form onSubmit={handleForm} style={{width:'40%',flexdirection: 'column'}} >
-    <Row className="mb-5 text-center">
+    <Row className="mb-4 text-center">
                 <h1 className="text-success">Sign Up</h1>
               </Row>
     <Row>          
     <FormGroup as={Col} md="12"> 
       <Label for="firstName">First Name</Label>
-      <Input required type="text"  id="firstName" placeholder="Firstname" 
+      <Input required type="text"  id="firstName" placeholder="Enter firstname" 
       onChange={(e)=>{setSignupRequest({...SignupRequest,firstName: e.target.value});}}
       
       />
@@ -68,7 +68,7 @@ export default function Registration() {
     <Row>
         <FormGroup>
           <Label for="lastName">Last Name</Label>
-          <Input required type="text" id="lastName" placeholder="Lastname" 
+          <Input required type="text" id="lastName" placeholder="Enter lastname" 
           onChange={(e)=>{setSignupRequest({...SignupRequest,lastName: e.target.value});}}
           />
         </FormGroup>
@@ -76,7 +76,7 @@ export default function Registration() {
         <Row>
         <FormGroup>
           <Label for="email">Email</Label>
-          <Input required type="email"  id="email" placeholder="Email" 
+          <Input required type="email"  id="email" placeholder="Enter email" 
           onChange={(e)=>{setSignupRequest({...SignupRequest,email: e.target.value});}}
           
           />
@@ -85,28 +85,28 @@ export default function Registration() {
         <Row>
         <FormGroup>
           <Label for="username">username</Label>
-          <Input required type="text" id="username" placeholder="username"
+          <Input required type="text" id="username" placeholder="Enter username"
           onChange={(e)=>{setSignupRequest({...SignupRequest,username: e.target.value});}} />
         </FormGroup>
         </Row>
         <Row>
         <FormGroup>
-          <Label for="password">password</Label>
-          <Input required type="password"  id="password" placeholder="password" 
+          <Label for="password">Password</Label>
+          <Input required type="password"  id="password" placeholder="Enter password" 
           onChange={(e)=>{setSignupRequest({...SignupRequest,password: e.target.value});}}/>
         </FormGroup>
         </Row>
         <Row>
         <FormGroup>
           <Label for="contactNumber">ContactNumber</Label>
-          <Input required type="text"  id="contactNumber" placeholder="Contact Number" 
+          <Input required type="text"  id="contactNumber" placeholder="Enter phone number" 
           onChange={(e)=>{setSignupRequest({...SignupRequest,contactNumber: e.target.value});}}/>
         </FormGroup>
         </Row>
-        <Row>
-            <Button color="success"> Register
+        <div>
+        <Button color="success"> Register
             </Button>
-            </Row>
+        </div>
         
 
         </Form>

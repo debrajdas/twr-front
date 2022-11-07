@@ -26,7 +26,7 @@ export default function MyProfile() {
   return (
     <div className="ex1">
       <ToastContainer/>
-      <h1>My Post</h1>
+      <h2 className="text-success">My Post</h2>
       {postList!=null ? (
         postList.map((postItem) => {
           return (

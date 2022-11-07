@@ -260,7 +260,7 @@ function showFailMessage(inputMessage) {
   
 
   return (
-    <div className="border shadow rounded-3 border-primary p-3 mt-3">
+    <div className="border shadow rounded-3 border-success p-3 mt-3">
       <Row>
         <div className="d-flex align-items-center mb-3">
           <div className="mx-3">

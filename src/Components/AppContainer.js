@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import HomePage from "./HomePage";
+
 import NotFoundPage from "./NotFoundPage";
 import NewsFeed from "./NewsFeed";
 import NewsFeedContent from "./NewsFeedContent";
@@ -11,13 +11,13 @@ import AllAccounts from "./AllAccounts";
 import UnauthorizedPage from "./UnauthorizedPage";
 import Login from "./Login";
 import Registration from "./Registration";
-import SignIn from "./SignIn";
+
 import SearchBar from "./SearchBar";
 function AppContainer() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<HomePage name="Sebanti" />} />
+        <Route path="/" element={<Login />} />
         <Route path="login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/newsfeed" element={<NewsFeed />}>

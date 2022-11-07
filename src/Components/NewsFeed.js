@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import Header from "./Header";
 
 import {
   RiNewspaperLine,
@@ -33,13 +34,12 @@ function NewsFeed() {
 
   return (
     <div>
-      
-
+      <Header/>
       <Row>
           
-        <Col md={5}>
+        <Col md={3}>
 
-        <Navbar bg="light" expand="lg" className="mb-3 mb-sm-0">
+        <Navbar expand="lg" className="mb-3 mb-sm-0">
             <Container className={styles.navbarContainer}>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse>
@@ -47,7 +47,7 @@ function NewsFeed() {
                 <ul className="list-group">
                 <Nav.Link>
                   <Link to="/newsfeed" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3 text-success shadow">
+                    <li className="list-group-item fs-5 py-3 text-success shadow border border-success rounded-pill">
                       <span>
                         {" "}
                         <RiNewspaperLine /> Newsfeed
@@ -57,7 +57,7 @@ function NewsFeed() {
                 </Nav.Link>
                 <Nav.Link>
                 <Link to="allaccounts" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3 text-success shadow">
+                    <li className="list-group-item fs-5 py-3 text-success shadow border border-success rounded-pill">
                       <span>
                         <RiBaseStationLine /> All Users
                       </span>
@@ -66,7 +66,7 @@ function NewsFeed() {
                 </Nav.Link>
                 <Nav.Link>
                   <Link to="myprofile" className="text-decoration-none">
-                    <li className="list-group-item fs-5 py-3 text-success shadow">
+                    <li className="list-group-item fs-5 py-3 text-success shadow border border-success rounded-pill">
                       <span>
                         <RiFolderUserLine /> My Posts
                       </span>
@@ -75,7 +75,7 @@ function NewsFeed() {
                 </Nav.Link>
                 <Nav.Link>
                   <li
-                    className={`list-group-item fs-5 py-3 text-success shadow ${styles.signOutButton}`}
+                    className={`list-group-item fs-5 py-3 text-success shadow  border border-success rounded-pill ${styles.signOutButton}`}
                     onClick={handleSignOut}
 
                   >
@@ -93,7 +93,7 @@ function NewsFeed() {
           
         </Col>
     
-        <Col md={7}>
+        <Col md={6}>
           <Outlet />
         </Col>
       </Row>

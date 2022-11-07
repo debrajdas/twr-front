@@ -97,7 +97,7 @@ export default function Login() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '100vh',
+        height: '90vh',
         width:'500vw'
       }}>
         <ToastContainer/>
@@ -111,23 +111,23 @@ export default function Login() {
             // //  justifycontent: 'center',
             //   }}
             >
-              <Row className="mb-5 text-center">
+              <Row className="mb-4 text-center">
                 <h1 className="text-success">Sign In</h1>
               </Row>
-              <Row className="mb-3">
+              <Row className="mb-2">
                 <FormGroup as={Col} md="12" >
                   <Label for="username">Username</Label>
-                  <Input required type="text" id="username" placeholder="username"
+                  <Input required type="text" id="username" placeholder="Enter username"
                   
                     onChange={(e)=>{setLoginRequest({...LoginRequest,username: e.target.value});}}/>
                   
                   
                 </FormGroup>
               </Row>
-              <Row className="mb-3">
+              <Row className="mb-2">
                 <FormGroup as={Col} md="12">
                 <Label for="password">Password</Label>
-          <Input required type="password" id="password" placeholder="password"
+          <Input required type="password" id="password" placeholder="Enter password"
           onChange={(e)=>{setLoginRequest({...LoginRequest,password: e.target.value});}}/>
   
                   
@@ -136,8 +136,8 @@ export default function Login() {
               <Button color="success">
                 Sign In <RiLoginBoxLine />
               </Button>
-               <b>Don't have an account.</b>
-               <Row>
+               <Row className="pt-3">
+               <b>Don't have an account?</b>
               <a href="/registration"> Register here</a> </Row>
             </Form>
           
