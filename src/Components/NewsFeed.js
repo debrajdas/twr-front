@@ -34,7 +34,6 @@ function NewsFeed() {
 
   return (
     <div>
-      <Header/>
       <Row>
           
         <Col md={3}>
