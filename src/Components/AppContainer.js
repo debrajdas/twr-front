@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 
 import NotFoundPage from "./NotFoundPage";
-import {NewsFeed} from "./NewsFeed";
+import NewsFeed from "./NewsFeed";
 import NewsFeedContent from "./NewsFeedContent";
 import Profile from "./Profile";
 import MyProfile from "./MyProfile";
